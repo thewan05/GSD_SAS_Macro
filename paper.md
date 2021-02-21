@@ -21,6 +21,7 @@ affiliations:
    index: 2
 date: 21 February 2021
 bibliography: paper.bib
+---
 
 # Summary
 Treatments that are found to be promising in a Phase II trial are studied more comprehensively in a Phase III trial where researchers 
