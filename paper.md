@@ -52,7 +52,7 @@ relaxing the PH assumption in favor of a `proportionality of time (PT)' assumpti
 failure time (AFT) model (@main). The authors have described various scenarios in the biomedical setting where their approach could be advantageous 
 compared to the standard methods with the help of real-life examples. Their proposed GSD method provides an alternate approach when the PH assumption is 
 not appropriate and allows various hazard shapes (increasing/decreasing monotonically over time, bathtub shaped, arc-shaped) using the generalized gamma 
-distribution. The purpose of this paper is to present a fully functional SAS macro that can be used to implement their GSD method. 
+distribution. The purpose of this paper is to present a fully functional SAS macro that can be used to implement their GSD method (@sas). 
 The SAS macro incorporates multitude of design features specific to a two-arm GSD for time-to-event outcomes and includes validation for any parameters 
 defined by the user, as well as suggestions for correcting erroneous input. 
 
