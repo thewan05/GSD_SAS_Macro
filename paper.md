@@ -47,7 +47,7 @@ complexities of survival outcomes such as random dropouts, prespecified accrual 
 varying accrual patterns, equal/unequal spaced interim testing points (looks), efficacy-only designs, efficacy and futility designs, 
 binding and non-binding futility rules, and many other flexible features specific to time-to-event outcomes.
 
-# Statement of Need
+# Statement of need
     
 When the underlying assumptions that drive the analytical and simulation-based approaches using the framework of the log-rank test are not valid, 
 hardly any alternate methods are available in literature or in standard statistical software. Recent developments in this field have considered 
