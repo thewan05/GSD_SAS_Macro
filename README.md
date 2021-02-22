@@ -113,7 +113,7 @@ rho_f=3,num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\DesktopUserDef
 
 
 
-## These macro parameters are used to obtain the results for example three.
+## These macro parameters are used to obtain the results for example three and figure two.
 
 ```
 NumSimul=10000, alpha =0.025, sides=1, lambda=0.5, sigma=0.75,med=20, evt_rate=0.7,
