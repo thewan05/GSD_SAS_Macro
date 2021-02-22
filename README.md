@@ -81,13 +81,67 @@ Notepad++:  <https://notepad-plus-plus.org/downloads/>
 
 ## Examples
 
-1) These macro parameters are used to obtain the results for example one.
+### These macro parameters are used to obtain the results for example one and figure one.
 
 ```
-NumSimul=10000, alpha=0.025, sides=1, lambda=0.5, sigma=0.75, med=20, evt_rate=0.7, seed=1729, r=1, Delta_PT_Ha=1.4, a=12, a_type=1, a_omega=1, t=60, bind=1, num_look=3, look_points=2, alpha_spend=1, rho=1, beta=0.10, beta_spend=1, rho_f=1, num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
+NumSimul=10000, alpha=0.025, sides=1, lambda=0.5, sigma=0.75, med=20, evt_rate=0.7,
+seed=1729, r=1, Delta_PT_Ha=1.4, a=12, a_type=1, a_omega=1, t=60,
+bind=1, num_look=3, look_points=2, alpha_spend=1, rho=1, beta=0.10, beta_spend=1,
+rho_f=1, num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
 ```
 
-![exp](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example1.PNG?raw=true)
+![example1](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example1.PNG?raw=true)
+
+![figure1](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/figure1.PNG?raw=true)
+
+
+
+
+### These macro parameters are used to obtain the results for example two.
+
+```
+NumSimul=10000, alpha=0.025, sides=1, lambda=0.5 ,sigma=0.75,med=20, evt_rate=0.7,
+seed=1729, r=1, Delta_PT_Ha=1.4, a=12,a_type=1, a_omega=1, t=60,
+bind=1, num_look=3, look_points=2,alpha_spend=1, rho =3, beta=0.10, beta_spend=1,
+rho_f=3,num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\DesktopUserDefTime dataset: 3 24 36 60
+```
+
+![example2](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example2.PNG?raw=true)
+
+![figure2](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/figure2.PNG?raw=true)
+
+
+
+
+### These macro parameters are used to obtain the results for example three.
+
+```
+NumSimul=10000, alpha =0.025, sides=1, lambda=0.5, sigma=0.75,med=20, evt_rate=0.7,
+seed=1729, r=1, Delta_PT_Ha=1.4, a=12,a_type=1, a_omega=1, t=60,
+bind=1, num_look=3, look_points=2,alpha_spend=3, rho=3, beta=0.10, beta_spend=3,
+rho_f=3,num_skip=0, maxiter=200, convg=1E3,direct=C:\Users\user1\Desktop
+
+UserDefTime dataset: 3 24 36 60
+UserDefAlpha dataset: 0.0050 0.0125 0.0250
+UserDefBeta dataset: 0.0100 0.0350 0.1000
+```
+![example3](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example3.PNG?raw=true)
+
+
+
+
+### These macro parameters are used to obtain the results for example four.
+
+```
+NumSimul=10000, alpha=0.025, sides=1, lambda=1, sigma=1, med=1,evt_rate=1,
+seed=1729, r =1, Delta_PT_Ha=1.75, a=1, a_type=1,a_omega=1, t=4,
+bind=1, num_look=4, look_points=1, alpha_spend=2,rho=1, beta=0.20, beta_spend=2,
+rho_f=1, num_skip=2,maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
+```
+
+![example4](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example4.PNG?raw=true)
+
+
 
 
 ## Contributing to GSD SAS Macro
