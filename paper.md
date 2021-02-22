@@ -40,11 +40,14 @@ and have a long history starting with quality control applications (@wald) and p
 is available on this topic in many books (@whitehead1; @jennison2; @pros; @dmi; @was) and overview articles 
 (@whitehead2; @todd; @mazu). When dealing with time-to-event outcome, a repeated significance testing approach incorporating a 
 family of designs (@pocock; @obrien; @wang) can be combined with the error spending method (@lan) to implement a GSD using a 
-log-rank test or by using the proportional hazards (PH) assumption. Popular statistical software often implement GSDs for time-to-event outcome 
-using the weighted and unweighted versions of the log-rank test either explicitly assuming exponentially distributed survival times or with the 
-PH assumption and are able to incorporate complexities of survival outcomes such as random dropouts, prespecified accrual and follow-up times, 
+log-rank test or by using the proportional hazards (PH) assumption. Popular statistical software such as GPower, PASS, and nQuery 
+often implement GSDs for time-to-event outcome using the weighted and unweighted versions of the log-rank test either 
+explicitly assuming exponentially distributed survival times or with the PH assumption and are able to incorporate 
+complexities of survival outcomes such as random dropouts, prespecified accrual and follow-up times, 
 varying accrual patterns, equal/unequal spaced interim testing points (looks), efficacy-only designs, efficacy and futility designs, 
 binding and non-binding futility rules, and many other flexible features specific to time-to-event outcomes.
+
+# Statement of Need
     
 When the underlying assumptions that drive the analytical and simulation-based approaches using the framework of the log-rank test are not valid, 
 hardly any alternate methods are available in literature or in standard statistical software. Recent developments in this field have considered 
