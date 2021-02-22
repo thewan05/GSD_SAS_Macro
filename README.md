@@ -1,6 +1,6 @@
 # SAS MACRO for GSD using TTE data that rely on PT assumption Version 1.0
 
-Code is available [here](github link)
+Code is available [here](https://github.com/thewan05/GSD_SAS_Macro/blob/main/gsd_sas_macro.sas?raw=true)
 
 # General Instructions
 
