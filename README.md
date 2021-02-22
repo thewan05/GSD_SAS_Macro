@@ -2,7 +2,7 @@
 
 Code is available [here](github link)
 
-## General Instructions
+# General Instructions
 
 - We advise starting a new SAS session for each study run.
 - We recommend at least 10,000 simulated samples.
@@ -52,7 +52,7 @@ Code is available [here](github link)
 4) If the file is run under a high computing cluster, the SAS log file is saved as a separate text file, Mydoc.log and the ods listing file is save as a separate .lst file.
 
 
-## Instructions for utilizing the high performance computing cluster:
+# Instructions for utilizing the high performance computing cluster:
 
 - Create an account through your institution to access the cluster.
 - Download the following free software:
@@ -79,9 +79,9 @@ Notepad++:  <https://notepad-plus-plus.org/downloads/>
 
 ![exp](https://github.com/thewan05/GSD_SAS_Macro//blob/main/img/exponential.JPG?raw=true)
 
-## Examples
+# Examples
 
-### These macro parameters are used to obtain the results for example one and figure one.
+## These macro parameters are used to obtain the results for example one and figure one.
 
 ```
 NumSimul=10000, alpha=0.025, sides=1, lambda=0.5, sigma=0.75, med=20, evt_rate=0.7,
@@ -97,7 +97,7 @@ rho_f=1, num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
 
 
 
-### These macro parameters are used to obtain the results for example two.
+## These macro parameters are used to obtain the results for example two.
 
 ```
 NumSimul=10000, alpha=0.025, sides=1, lambda=0.5 ,sigma=0.75,med=20, evt_rate=0.7,
@@ -108,12 +108,12 @@ rho_f=3,num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\DesktopUserDef
 
 ![example2](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example2.PNG?raw=true)
 
-![figure2](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/figure2.PNG?raw=true)
 
 
 
 
-### These macro parameters are used to obtain the results for example three.
+
+## These macro parameters are used to obtain the results for example three.
 
 ```
 NumSimul=10000, alpha =0.025, sides=1, lambda=0.5, sigma=0.75,med=20, evt_rate=0.7,
@@ -127,10 +127,10 @@ UserDefBeta dataset: 0.0100 0.0350 0.1000
 ```
 ![example3](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/example3.PNG?raw=true)
 
+![figure2](https://github.com/thewan05/GSD_SAS_Macro/blob/main/img/figure2.PNG?raw=true)
 
 
-
-### These macro parameters are used to obtain the results for example four.
+## These macro parameters are used to obtain the results for example four.
 
 ```
 NumSimul=10000, alpha=0.025, sides=1, lambda=1, sigma=1, med=1,evt_rate=1,
@@ -144,7 +144,7 @@ rho_f=1, num_skip=2,maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
 
 
 
-## Contributing to GSD SAS Macro
+# Contributing to GSD SAS Macro
 
 We welcome suggestions. For further information, contact:
 Milind A. Phadnis, Department of Biostatistics and Data Science, University of Kansas Medical Center, 3901 Rainbow Blvd, Kansas City, KS 66103
