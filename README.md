@@ -44,7 +44,6 @@ Code is available [here](github link)
 2) The following datasets are needed to take advantage of the macro's user defined options.
 
 - If unequal look points (look_points=2) are selected then UserDefTime will need to include the number of look points (numuser) followed by the time points. The timepoints need to be in cumulative, ascending order and the last time point must equal the total study time,t.
-- 
 - If user defined alpha spending (alpha_spend=3) or beta spending (beta_spend=3) are selected then UserDefAlpha (type I error to be spent at each look) and UserDefBeta (type II error to be spent at each look) values must be split in cumulative, ascending order and the last entry must match the inputs for alpha and beta.
 
 3) If the file is run through the SAS interface, the SAS log file is saved as a separate text file, Mydoc.log, under the user-defined filepath, while output tables are generated as an ods listing file in the output window. The first fifty errors will be printed at the bottom of the ods listing file.
@@ -64,16 +63,18 @@ FileZilla:  <https://filezilla-project.org/download.php?type=client>
 Notepad++:  <https://notepad-plus-plus.org/downloads/>
 
 - Login to the cluster through PuTTY and FileZilla. Check with your institution for instructions.
-- 
 - Basic Linux commands:
--- cd work: load the working directory   
--- ls: list the files in the working directory
--- sbatch exponential.sh: submission script for a batch job
-
+1) cd work: load the working directory   
+2) ls: list the files in the working directory
+3) sbatch exponential.sh: submission script for a batch job
 - Create a script file in Notepad++
--
-- 
-
+1) Under Edit, EOL, select Unix Style
+2) Select 'Save As' and save as a .sh file
+3) Designate number of CPUs being utilized, RAM, and the SAS file that will be run. In this example, it is exponential.sas
+- Submit the file 
+1) Using FileZilla, move the exponential.sas file and your submission script (exponential.sh) to the working directory.
+2) Type unix command `sbatch exponential.sh' to submit.
+3) You will receive an email once the job is complete.
 
 
 
