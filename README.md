@@ -1,16 +1,17 @@
 # SAS MACRO for GSD using TTE data that rely on PT assumption Version 1.0
 
-We advise starting a new SAS session for each study run. We recommend at least 10,000 simulated samples.
-
-
-For further information, contact:
-Milind A. Phadnis, Department of Biostatistics and Data Science, University of Kansas Medical Center, 3901 Rainbow Blvd, Kansas City, KS 66103
-Email: <mphadnis@kumc.edu> 
-URL: <http://www.kumc.edu/school-of-medicine.html>
-
 Code is available [here](github link)
 
 ## General Instructions
+
+- We advise starting a new SAS session for each study run.
+- We recommend at least 10,000 simulated samples.
+- Default values for some macro parameters have been provided in the text description.
+- Error checks are in place to prevent impossible values from being used as macro parameters. If an impossible value is entered, the macro will stop executing and an error message is displayed with suggestions for correcting erroneous input values.
+- Warning messages are also in place. If the number of simulations is < 10000, a warning message will display. If the first interim is conducted very early (relative to total study time) and with few events, the program may run into convergence problems.
+- If any warnings or errors are detected, the SAS log file will display the first fifty errors.
+- The macro will not run if simulations are <1000. Users can comment out this error check to determine if their input parameters are valid before a full simulation is conducted.
+
 
 1) Parameters for the macro are entered at the bottom of the program.
 
@@ -64,17 +65,36 @@ Notepad++:  <https://notepad-plus-plus.org/downloads/>
 
 - Login to the cluster through PuTTY and FileZilla. Check with your institution for instructions.
 - Basic Linux commands:
-1) cd work: load the working directory   
-2) ls: list the files in the working directory
-3) sbatch exponential.sh: submission script for a batch job
+  - cd work: load the working directory   
+  - ls: list the files in the working directory
+  - sbatch exponential.sh: submission script for a batch job
 - Create a script file in Notepad++
-1) Under Edit, EOL, select Unix Style
-2) Select 'Save As' and save as a .sh file
-3) Designate number of CPUs being utilized, RAM, and the SAS file that will be run. In this example, it is exponential.sas
+  - Under Edit, EOL, select Unix Style
+  - Select 'Save As' and save as a .sh file
+  - Designate number of CPUs being utilized, RAM, and the SAS file that will be run. In this example, it is exponential.sas
 - Submit the file 
-1) Using FileZilla, move the exponential.sas file and your submission script (exponential.sh) to the working directory.
-2) Type unix command `sbatch exponential.sh' to submit.
-3) You will receive an email once the job is complete.
+  - Using FileZilla, move the exponential.sas file and your submission script (exponential.sh) to the working directory.
+  - Type unix command `sbatch exponential.sh' to submit.
+  - You will receive an email once the job is complete.
 
+![alt text](https://github.com/thewan05/GSD_SAS_Macro/blob/main/exponential.JPG?raw=true)
+
+## Examples
+
+1) These macro parameters are used to obtain the results for example one.
+
+```
+NumSimul=10000, alpha=0.025, sides=1, lambda=0.5, sigma=0.75, med=20, evt_rate=0.7, seed=1729, r=1, Delta_PT_Ha=1.4, a=12, a_type=1, a_omega=1, t=60, bind=1, num_look=3, look_points=2, alpha_spend=1, rho=1, beta=0.10, beta_spend=1, rho_f=1, num_skip=0, maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
+```
+
+
+
+
+## Contributing to GSD SAS Macro
+
+We welcome suggestions. For further information, contact:
+Milind A. Phadnis, Department of Biostatistics and Data Science, University of Kansas Medical Center, 3901 Rainbow Blvd, Kansas City, KS 66103
+Email: <mphadnis@kumc.edu> 
+URL: <http://www.kumc.edu/school-of-medicine.html>
 
 
