@@ -8,14 +8,14 @@ tags:
   - proportional time
   - sample size
 authors:
-  - name: Milind A. Phadnis^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
+  - name: Milind A. Phadnis^[Corresponding author]
     orcid: 0000-0001-6472-9325
     affiliation: 1
   - name: Nadeesha Thewarapperuma
     orcid: 0000-0002-9306-2619
     affiliation: 1
 affiliations:
- - name: University of Kansas Medical Center
+ - name: University of Kansas Medical Center, Department of Biostatistics & Data Science
    index: 1
 date: 21 February 2021
 bibliography: paper.bib
