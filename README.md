@@ -81,6 +81,10 @@ Notepad++:  <https://notepad-plus-plus.org/downloads/>
 
 # Examples
 
+These examples were first published under the [methodology paper](https://pubmed.ncbi.nlm.nih.gov/31571529/) (Phadnis and Mayo, 2020).
+The examples are presented once more so the reader can easily reproduce them. There may be some minor variations,
+depending on the seed used.
+
 ## These macro parameters are used to obtain the results for example one and figure one.
 
 ```
@@ -146,9 +150,13 @@ rho_f=1, num_skip=2,maxiter=200, convg=1E3, direct=C:\Users\user1\Desktop
 
 # Contributing to GSD SAS Macro
 
-We welcome suggestions. For further information, contact:
+We gladly welcome suggestions! For further information, contact:
 Milind A. Phadnis, Department of Biostatistics and Data Science, University of Kansas Medical Center, 3901 Rainbow Blvd, Kansas City, KS 66103
 Email: <mphadnis@kumc.edu> 
 URL: <http://www.kumc.edu/school-of-medicine.html>
 
+
+# References
+
+Phadnis MA, Mayo MS. Group sequential design for time-to-event data using the concept of proportional time. Stat Methods Med Res. 2020 Jul;29(7):1867-1890. doi: 10.1177/0962280219876313. Epub 2019 Oct 1. PMID: 31571529.
 
