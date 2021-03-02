@@ -100,7 +100,7 @@ ods graphics off;
 	/**********CALCULATE MU FROM SIGMA, LAMBDA, AND MEDIAN TIME**********/
 	data gamma;
 		do mu= -20 to 20 by 0.00001 until ((abs(x-0.5)<0.0001));  /* This steps reduces user-input burden */
-			if &lambda = 0 then do;
+			if abs(&lambda) <= 0.1 then do;
 				upperbound = (log(&med) - mu)/&sigma;
 				x= cdf('Normal',upperbound);
 				output;
