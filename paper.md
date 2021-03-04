@@ -1,5 +1,5 @@
 ---
-title: 'PT_GSDesign: A SAS Macro for Group Sequential Designs with Time-to-event Data using the Concept of Proportional Time'
+title: '%PT_GSDesign: A SAS Macro for Group Sequential Designs with Time-to-event Data using the Concept of Proportional Time'
 tags:
   - SAS
   - efficacy
