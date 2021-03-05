@@ -9,38 +9,38 @@ Code is available [here](https://github.com/thewan05/GSD_SAS_Macro/blob/main/gsd
 - Default values for some macro parameters have been provided in the text description.
 - Error checks are in place to prevent impossible values from being used as macro parameters. If an impossible value is entered, the macro will stop executing and an error message is displayed with suggestions for correcting erroneous input values.
 - Warning messages are also in place. If the number of simulations is < 10000, a warning message will display. If the first interim is conducted very early (relative to total study time) and with few events, the program may run into convergence problems.
-- If any warnings or errors are detected, the SAS log file will display the first fifty errors.
-- The macro will not run if simulations are <1000. Users can comment out this error check to determine if their input parameters are valid before a full simulation is conducted.
+- If any warnings or errors are detected, the SAS log file will display the first fifty messages.
+- The macro will not run if simulations are <1000.
 
 
 1) Parameters for the macro are entered at the bottom of the program.
 
-- NumSimul        Number of simulated samples for the given sample size
-- alpha           Type I error
-- sides           1-sided or 2-sided test	
-- lambda          Shape parameter of the Control Arm using GG distribution
-- sigma           Scale parameter of the Control Arm using GG distribution
-- med             User entered Median of the Control Arm using GG distribution
-- evt_rate        Anticipated event rate for loss-to-follow-up (right censoring)
-- seed            A random seed is chosen
-- r               Allocation Ratio: (# in Treatment arm)/(# in Standard Arm)	
-- Delta_PT_Ha     Under the alternative, PT is greater than 1
-- a               Accrual time for the study
-- a_type          Type of accrual pattern: "1" = Uniform, "2" = Truncated Exponential with parameter omega             
-- a_omega         Parameter of "2" = truncated exponential distribution: >0 (convex) or <0 (concave); input will only be used with truncated exponential            
-- t               Total time for the study = Accrual time + Follow-up time
-- bind            Binding futility = 1; Non-binding futility=0
-- num_look        Total number of looks (including the look at the end-of-study)
-- look_points     1 = equally spaced looks, 2 = unequally spaced looks
-- alpha_spend     Type of Alpha spending function: 1=Jennison-Turnbull, 2=Hwang-Shih-DeCani, 3=User defined spending
-- rho             For both JT and HSD functions, rho=1 gives Pocock-type function
-- beta            Type II error for the study
-- beta_spend      Type of Beta spending function: 1=Jennison-Turnbull, 2=Hwang-Shih-DeCani, 3=User defined spending
-- rho_f           For both JT and HSD functions, rho=1 gives Pocock-type function
-- num_skip        Number of futility skips i.e. the first x looks at which futility is not tested
-- maxiter         Maximum number of iterations. Change default value if algorithm does not converge
-- convg           Convergence criteria. Change default value if algorithm does not converge
-- direct          File path to store log file
+- NumSimul:        Number of simulated samples for the given sample size
+- alpha:           Type I error
+- sides:           1-sided or 2-sided test	
+- lambda:          Shape parameter of the Control Arm using GG distribution
+- sigma:           Scale parameter of the Control Arm using GG distribution
+- med:             User entered Median of the Control Arm using GG distribution
+- evt_rate:        Anticipated event rate for loss-to-follow-up (right censoring)
+- seed:            A random seed is chosen
+- r:               Allocation Ratio: (# in Treatment arm)/(# in Standard Arm)	
+- Delta_PT_Ha:     Under the alternative, PT is greater than 1
+- a:               Accrual time for the study
+- a_type:          Type of accrual pattern: "1" = Uniform, "2" = Truncated Exponential with parameter omega             
+- a_omega:         Parameter of "2" = truncated exponential distribution: >0 (convex) or <0 (concave); input will only be used with truncated exponential            
+- t:               Total time for the study = Accrual time + Follow-up time
+- bind:            Binding futility = 1; Non-binding futility=0
+- num_look:        Total number of looks (including the look at the end-of-study)
+- look_points:     1 = equally spaced looks, 2 = unequally spaced looks
+- alpha_spend:     Type of Alpha spending function: 1=Jennison-Turnbull, 2=Hwang-Shih-DeCani, 3=User defined spending
+- rho:             For both JT and HSD functions, rho=1 gives Pocock-type function
+- beta:            Type II error for the study
+- beta_spend:      Type of Beta spending function: 1=Jennison-Turnbull, 2=Hwang-Shih-DeCani, 3=User defined spending
+- rho_f:           For both JT and HSD functions, rho=1 gives Pocock-type function
+- num_skip:        Number of futility skips i.e. the first x looks at which futility is not tested
+- maxiter:         Maximum number of iterations. Change default value if algorithm does not converge
+- convg:           Convergence criteria. Change default value if algorithm does not converge
+- direct:          File path to store log file
 
 2) The following datasets are needed to take advantage of the macro's user defined options.
 
